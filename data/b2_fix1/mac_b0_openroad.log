@@ -1,0 +1,16 @@
+OpenROAD v2.0-17598-ga008522d8 
+Features included (+) or not (-): +Charts +GPU +GUI +Python : None
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0435] Reading extraction model file /home/research/orfs-git/flow/platforms/sky130hd/rcx_patterns.rules ...
+[INFO RCX-0436] RC segment generation mac_b0 (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 2428 rc segments
+[INFO RCX-0439] Coupling Cap extraction mac_b0 ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 55% of 5101 wires extracted
+[INFO RCX-0442] 100% of 5101 wires extracted
+[INFO RCX-0045] Extract 1038 nets, 3445 rsegs, 3445 caps, 4895 ccs
+[INFO RCX-0443] 1038 nets finished
+Error: run.tcl, 9 STA-0304

@@ -1,0 +1,26 @@
+Found 24 unannotated drivers.
+ _1473_/SUM
+ _1475_/SUM
+ _1487_/SUM
+ _1489_/SUM
+ _1497_/SUM
+ _1508_/SUM
+ _1514_/COUT
+ _1515_/SUM
+ _1523_/SUM
+ _1529_/SUM
+ _1532_/SUM
+ _1537_/SUM
+ _1540_/SUM
+ _1544_/SUM
+ _1553_/SUM
+ _1554_/SUM
+ _1564_/SUM
+ _1569_/SUM
+ _1571_/SUM
+ _1573_/SUM
+ _1578_/SUM
+ clkload0/X
+ clkload1/Y
+ clkload2/Y
+Found 0 partially unannotated drivers.
