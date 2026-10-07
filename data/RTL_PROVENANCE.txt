@@ -1,0 +1,16 @@
+== chip_top.sv md5 across M1..M7 ==
+46fa4c633b089c76c319e0aa31251f9a  /home/research/b3_ihp/sim/M1/chip_top.sv
+46fa4c633b089c76c319e0aa31251f9a  /home/research/b3_ihp/sim/M2/chip_top.sv
+46fa4c633b089c76c319e0aa31251f9a  /home/research/b3_ihp/sim/M3/chip_top.sv
+46fa4c633b089c76c319e0aa31251f9a  /home/research/b3_ihp/sim/M4/chip_top.sv
+46fa4c633b089c76c319e0aa31251f9a  /home/research/b3_ihp/sim/M5/chip_top.sv
+46fa4c633b089c76c319e0aa31251f9a  /home/research/b3_ihp/sim/M6/chip_top.sv
+46fa4c633b089c76c319e0aa31251f9a  /home/research/b3_ihp/sim/M7/chip_top.sv
+
+== mac.sv: E: curated vs WSL run copy ==
+496516e0910f87f42220397cc3062bf4  /mnt/e/科研/B2_MAC_Followup/rtl/mac.sv
+496516e0910f87f42220397cc3062bf4  /home/research/b2_sky130/mac.sv
+
+== tb_gate_chip.sv: g1 vs s43 ==
+a249d9fc9eb9180ce82226940997289b  /home/research/b3_ihp/g1/tb_gate_chip.sv
+e8af8a2b0f3de923dbde5ef667cca1cb  /home/research/b3_ihp/s43/tb_gate_chip.sv

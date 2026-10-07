@@ -1,0 +1,6 @@
+yosys:   Yosys 0.69+ (git sha1 20091e4ca, Release, GNU /usr/bin/c++ 11.4.0) [github.com/The-OpenROAD-Project/yosys at master]
+iverilog: Icarus Verilog version 11.0 (stable) ()
+openroad: v2.0-17598-ga008522d8 
+opensta:  2.6.0
+orfs:     8ae3ae362e2e9be94ab1d27b3dd647c8328a783f Fri Dec 13 13:53:07 2024 +0000
+b3_chip synth date: Sep 19 17:46
