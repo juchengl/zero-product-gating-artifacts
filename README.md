@@ -60,9 +60,6 @@ Apache-2.0 (see `LICENSE`). The SkyWater sky130 PDK and OpenROAD-flow-scripts ar
   title        = {Artifacts for "A Cross-Scale Post-Route Power Study of Zero-Product Gating"},
   year         = {2026},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.XXXXXXX},
-  url          = {https://github.com/USERNAME/zero-product-gating-artifacts}
+  doi          = {10.5281/zenodo.23213118},
+  url          = {https://github.com/juchengl/zero-product-gating-artifacts}
 }
-```
-
-(DOI and URL are finalized when the Zenodo record is minted.)
