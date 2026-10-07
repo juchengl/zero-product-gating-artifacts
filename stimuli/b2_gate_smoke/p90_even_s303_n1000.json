@@ -1,0 +1,21 @@
+{
+  "name": "p90_even_s303_n1000",
+  "source": "synthetic",
+  "target_zero_product_ratio": 0.9,
+  "pattern": "even",
+  "seed": 303,
+  "count": 1000,
+  "zero_product_count": 900,
+  "zero_a_count": 463,
+  "zero_b_count": 437,
+  "zero_runs": 100,
+  "max_zero_run": 9,
+  "zero_state_transitions": 199,
+  "pair_multiset_sha256": "0683193e7360c2a63097997b99bb6b94b2002b3c9d3f56ee5e2f48cd0c500397",
+  "vector_file": "data/gate_smoke/p90_even_s303_n1000.txt",
+  "accepted_transactions": 1000,
+  "measurement_start_cycle": 3,
+  "measurement_end_cycle_exclusive": 1004,
+  "window_convention": "first capture through final retirement; reset excluded; includes one pipeline drain cycle",
+  "sha256": "0a6d57e5800dbc748d9913eea7acff1db02fbca55249d26a1796b38852156a14"
+}

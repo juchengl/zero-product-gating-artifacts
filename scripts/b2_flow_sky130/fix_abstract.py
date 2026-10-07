@@ -1,0 +1,8 @@
+from pathlib import Path
+p = Path("/mnt/c/Users/Administrator/Desktop/科研/B2_MAC_Followup/paper/manuscript.tex")
+t = p.read_text(encoding="utf-8")
+old = "reporting the \\emph{glitch-free dynamic-energy boundary} (a lower bound): valid-isolation alone yields $-5.2\\%$ even at zero sparsity; the zero-gating increment grows monotonically, reaching $-2.2\\%$ (B3 vs B1) at $90\\%$; input-hold beats force-to-zero ($-7.41\\%$ vs $-6.16\\%$); zero-detection hardware costs $\\sim0.5\\%$ (at the resolution limit). SDF-annotated (glitch-true) re-simulation confirms the ordering and widens the hold-vs-force gap, showing the zero-delay figures are conservative."
+new = "reporting the \\emph{glitch-free dynamic-energy boundary} (a lower bound): at the base layout, valid-isolation alone yields $-5.2\\%$ even at zero sparsity and the zero-gating increment grows monotonically to $-2.2\\%$ (B3 vs B1) at $90\\%$; input-hold beats force-to-zero ($-7.41\\%$ vs $-6.16\\%$); zero-detection hardware costs $\\sim0.5\\%$. SDF-annotated (glitch-true) re-simulation confirms the ordering and widens the hold-vs-force gap. A layout-perturbation study adds a finding we consider as important as the boundary itself: the valid-isolation benefit \\emph{flips sign} across layouts ($+3.4$ to $+6.8\\%$ at two of three layouts) while input-hold is the only variant that never regresses ($0\\ldots-7.4\\%$)---isolation benefits are layout-specific, and single-layout positive results do not establish robustness."
+assert old in t, "abstract snippet not found"
+p.write_text(t.replace(old, new), encoding="utf-8")
+print("abstract updated")

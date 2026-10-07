@@ -1,0 +1,21 @@
+{
+  "name": "p10_clustered_s303_n1000",
+  "source": "synthetic",
+  "target_zero_product_ratio": 0.1,
+  "pattern": "clustered",
+  "seed": 303,
+  "count": 1000,
+  "zero_product_count": 100,
+  "zero_a_count": 42,
+  "zero_b_count": 58,
+  "zero_runs": 1,
+  "max_zero_run": 100,
+  "zero_state_transitions": 1,
+  "pair_multiset_sha256": "23ddf1ad95d1577480957723e9bd6c46eb5957086b38b7e9cecc738ff1ea05e4",
+  "vector_file": "data/gate_smoke/p10_clustered_s303_n1000.txt",
+  "accepted_transactions": 1000,
+  "measurement_start_cycle": 3,
+  "measurement_end_cycle_exclusive": 1004,
+  "window_convention": "first capture through final retirement; reset excluded; includes one pipeline drain cycle",
+  "sha256": "aa96efc5a304108794f1a563f0d4846dddd55dc92460b43a5d9ef7a05a81fcce"
+}

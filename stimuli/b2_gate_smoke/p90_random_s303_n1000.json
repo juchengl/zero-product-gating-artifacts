@@ -1,0 +1,21 @@
+{
+  "name": "p90_random_s303_n1000",
+  "source": "synthetic",
+  "target_zero_product_ratio": 0.9,
+  "pattern": "random",
+  "seed": 303,
+  "count": 1000,
+  "zero_product_count": 900,
+  "zero_a_count": 463,
+  "zero_b_count": 437,
+  "zero_runs": 91,
+  "max_zero_run": 44,
+  "zero_state_transitions": 180,
+  "pair_multiset_sha256": "0683193e7360c2a63097997b99bb6b94b2002b3c9d3f56ee5e2f48cd0c500397",
+  "vector_file": "data/gate_smoke/p90_random_s303_n1000.txt",
+  "accepted_transactions": 1000,
+  "measurement_start_cycle": 3,
+  "measurement_end_cycle_exclusive": 1004,
+  "window_convention": "first capture through final retirement; reset excluded; includes one pipeline drain cycle",
+  "sha256": "8caf9c8bb1e0688c6efa22d5f9427190705b9162f3b18cc21169a85fc63cee5c"
+}
