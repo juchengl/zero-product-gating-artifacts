@@ -1,0 +1,66 @@
+OpenROAD v2.0-17598-ga008522d8 
+Features included (+) or not (-): +Charts +GPU +GUI +Python : None
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0435] Reading extraction model file /home/research/orfs-git/flow/platforms/sky130hd/rcx_patterns.rules ...
+[INFO RCX-0436] RC segment generation mac_b0 (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 2428 rc segments
+[INFO RCX-0439] Coupling Cap extraction mac_b0 ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 55% of 5101 wires extracted
+[INFO RCX-0442] 100% of 5101 wires extracted
+[INFO RCX-0045] Extract 1038 nets, 3445 rsegs, 3445 caps, 4895 ccs
+[WARNING STA-0363] pin 'b[0]' not found.
+[WARNING STA-0363] pin 'b[1]' not found.
+[WARNING STA-0363] pin 'b[2]' not found.
+[WARNING STA-0363] pin 'b[3]' not found.
+[WARNING STA-0363] pin 'b[4]' not found.
+[WARNING STA-0363] pin 'b[5]' not found.
+[WARNING STA-0363] pin 'b[6]' not found.
+[WARNING STA-0363] pin 'b[7]' not found.
+[WARNING STA-0363] pin 'valid' not found.
+[WARNING STA-0363] pin 'rst' not found.
+[WARNING STA-0363] pin 'clk' not found.
+[WARNING STA-0363] pin 'out_valid' not found.
+[WARNING STA-0363] pin 'a[0]' not found.
+[WARNING STA-0363] pin 'a[1]' not found.
+[WARNING STA-0363] pin 'a[2]' not found.
+[WARNING STA-0363] pin 'a[3]' not found.
+[WARNING STA-0363] pin 'a[4]' not found.
+[WARNING STA-0363] pin 'a[5]' not found.
+[WARNING STA-0363] pin 'a[6]' not found.
+[WARNING STA-0363] pin 'a[7]' not found.
+[WARNING STA-0363] pin 'acc[0]' not found.
+[WARNING STA-0363] pin 'acc[1]' not found.
+[WARNING STA-0363] pin 'acc[2]' not found.
+[WARNING STA-0363] pin 'acc[3]' not found.
+[WARNING STA-0363] pin 'acc[4]' not found.
+[WARNING STA-0363] pin 'acc[5]' not found.
+[WARNING STA-0363] pin 'acc[6]' not found.
+[WARNING STA-0363] pin 'acc[7]' not found.
+[WARNING STA-0363] pin 'acc[8]' not found.
+[WARNING STA-0363] pin 'acc[9]' not found.
+[WARNING STA-0363] pin 'acc[10]' not found.
+[WARNING STA-0363] pin 'acc[11]' not found.
+[WARNING STA-0363] pin 'acc[12]' not found.
+[WARNING STA-0363] pin 'acc[13]' not found.
+[WARNING STA-0363] pin 'acc[14]' not found.
+[WARNING STA-0363] pin 'acc[15]' not found.
+[WARNING STA-0363] pin 'acc[16]' not found.
+[WARNING STA-0363] pin 'acc[17]' not found.
+[WARNING STA-0363] pin 'acc[18]' not found.
+[WARNING STA-0363] pin 'acc[19]' not found.
+[WARNING STA-0363] pin 'acc[20]' not found.
+[WARNING STA-0363] pin 'acc[21]' not found.
+[WARNING STA-0363] pin 'acc[22]' not found.
+[WARNING STA-0363] pin 'acc[23]' not found.
+[WARNING STA-0363] pin 'acc[24]' not found.
+[WARNING STA-0363] pin 'acc[25]' not found.
+[WARNING STA-0363] pin 'acc[26]' not found.
+[WARNING STA-0363] pin 'acc[27]' not found.
+[WARNING STA-0363] pin 'acc[28]' not found.
+[WARNING STA-0363] pin 'acc[29]' not found.
+[WARNING STA-0363] pin 'acc[30]' not found.
+[WARNING STA-0363] pin 'acc[31]' not found.
