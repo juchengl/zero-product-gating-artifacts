@@ -16,3 +16,34 @@ orfs:     8ae3ae362e2e9be94ab1d27b3dd647c8328a783f (OpenROAD-flow-scripts, Fri D
   SDF-annotated single-MAC runs; `netlists/sky130_fd_sc_hd_sim.v` is the standard sky130 hd behavioral
   simulation model.
 - Environment: Ubuntu 22.04 (WSL2), x86_64.
+
+## Additional toolchain for the §7 per-pin evidence and Table 6
+
+The activity-propagation comparison required two things the stock OpenSTA 2.6.0 release does not
+provide, so a patched build was used:
+
+```
+opensta:  3.1.0 (built from source, The-OpenROAD-Project/OpenSTA @ master, 2026-10-30)
+eigen:    3.4.0-2ubuntu2         (libeigen3-dev)
+cudd:     3.0.0  (built from The-OpenROAD-Project/cudd, install prefix $HOME/cudd-install)
+flex:     2.6.4  (libfl-dev, for FlexLexer.h)
+iverilog: 11.0   (VCD generation, zero-delay; SDF not used for this comparison)
+```
+
+Two commands were added to `power/Power.i` + `power/Power.{hh,cc}`:
+
+- `report_activity_dump_cmd <file>` — dumps `pin, net, density, duty, origin` for every leaf pin
+  (`origin` is `propagated`, `user`, `clock` or `unknown`).
+- `set_power_pin_activity_by_name <pin_path> <density> <duty>` — bypasses `get_pins` pattern
+  matching, which cannot address escaped identifiers such as `a_q[0]$_SDFFE_PP0P_`.
+
+Notes that matter for reproduction:
+
+- `setUserActivity` takes **transitions per second**, not per clock cycle; `vcd_truth2.py`
+  converts with a factor `1e9 / period_ns`.
+- Register pins cannot be reached by name; the script walks `get_cells -hier *SDFFE*`, strips the
+  `core.` prefix from `get_full_name`, and sets the pin object through
+  `sta::set_power_pin_activity`.
+- The stock flow "annotates the register outputs and propagates" arm is reproduced by setting the
+  51 register Q pins only (`acts_reg.tcl`); the corrected arm sets every driver pin
+  (`acts_inj.tcl`).

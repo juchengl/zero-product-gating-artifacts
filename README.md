@@ -19,6 +19,7 @@ All power numbers in the paper are **post-route** values measured on the SkyWate
 | `scripts/orfs_designs/` | ORFS design configs (`config.mk` + constraints) for `mac_b0`–`mac_b4`, `mac_common`, `b3_chip` |
 | `data/b2_odo_matrix/` | Full single-MAC matrix outputs: per workload × variant activity TCLs + power reports, incl. 3-corner sweep (`run_corner_*`) |
 | `data/g1/` | Array grid outputs: activity TCLs (`acts_*`), gate-sim logs (`out_*`), power reports (`power_*` 3-digit, `repower_*` 9-digit — the series behind the array table) |
+| `data/b2_matrix/` | Propagated-vs-injected comparison for §7 and Table 6: `matrix_summary.csv` (5 variants × 4 densities), per-point activity dumps, `activity_compare.tsv` |
 | `data/b2_fix1/` | SPEF annotation coverage + no-VCD power reference for `mac_b0` |
 | `data/b2_fig5/` | Glitch-wave figure data (`fig5.csv`, zero-delay and SDF replay VCDs for B3 at p90) |
 | `data/RTL_PROVENANCE.txt` | md5 checks: array RTL identical across all milestones; MAC RTL identical between run copy and curated copy |
@@ -26,7 +27,7 @@ All power numbers in the paper are **post-route** values measured on the SkyWate
 
 ## Toolchain
 
-See `TOOL_VERSIONS.txt`. In short: OpenROAD-flow-scripts (ORFS) at commit `8ae3ae3` with its bundled sky130hd platform; OpenROAD `v2.0-17598-ga008522d8`; Yosys `0.69+` (git `20091e4ca`); Icarus Verilog `11.0`; OpenSTA `2.6.0`. The sky130 PDK (Apache-2.0) is not redistributed here — use the ORFS-bundled platform.
+See `TOOL_VERSIONS.txt`. In short: OpenROAD-flow-scripts (ORFS) at commit `8ae3ae3` with its bundled sky130hd platform; OpenROAD `v2.0-17598-ga008522d8`; Yosys `0.69+` (git `20091e4ca`); Icarus Verilog `11.0`; OpenSTA `2.6.0` for the published power numbers, and a **patched OpenSTA `3.1.0`** for the §7 activity-dump comparison (see `TOOL_VERSIONS.md`). The sky130 PDK (Apache-2.0) is not redistributed here — use the ORFS-bundled platform.
 
 ## Reproducing
 
