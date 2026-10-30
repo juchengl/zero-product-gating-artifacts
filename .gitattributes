@@ -1,0 +1,6 @@
+# Shell scripts and data must keep LF so they run on Linux
+*.sh text eol=lf
+*.py text eol=lf
+*.tsv text eol=lf
+*.csv text eol=lf
+*.tcl text eol=lf
